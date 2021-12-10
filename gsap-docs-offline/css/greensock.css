@@ -1,0 +1,1995 @@
+/* GreenSock */
+
+::selection {
+  background-color: #88ce04;
+  color: white;
+}
+
+body {
+  background: #ededed !important;
+  color: #606060;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 19px;
+  line-height: 1.4;
+  font-weight: 300;
+
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button.ipsButton,
+[type="submit"].ipsButton {
+  font-family: "Signika Negative", sans-serif;
+}
+
+a {
+  font-weight: 400;
+}
+
+/* Overriding IPS defaults for normal text using the above */
+.ipsType_normal {
+  font-size: 19px;
+}
+
+.ipsType_normal:not( .ipsType_richText ) {
+  line-height: 1.4;
+}
+
+.ipsType_normal, .ipsType_medium {
+  font-weight: 300 !important;
+}
+
+.ipsCommentCount {
+  vertical-align: middle;
+}
+
+.ipsType_light {
+  color: #888;
+}
+
+.ipsEmpty {
+  color: #9b9b9b;
+}
+
+.ipsApp .ipsNotificationCount {
+  background: #dd0000;
+}
+
+@media (max-width: 1040px) {
+  body,
+  .ipsType_normal {
+    font-size: 16px;
+  }
+}
+/* End override */
+
+a {
+  color: #4e9815;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover .ipsPager_type {
+  color: #4e9815;
+  text-decoration: underline;
+}
+.linkWithIcon:hover {
+  text-decoration: none;
+}
+.linkWithIcon:hover span {
+  text-decoration: underline;
+}
+
+.prettyprint {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-top: 0em;
+}
+
+.cjmg_bar > li:last-child > a {
+  padding-left: 0;
+}
+
+.cInnerContent {
+  max-width: 1040px;
+}
+
+@media (max-width: 1270px) {
+  .cInnerContent {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.ipsResponsive_inlineBlock {
+  display: inline-block;
+}
+
+/* hide the Flash/ActionScript archive on the main index page. Note: had to reference category_1 ID to make this work, but it's a bit of a hack */
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] [data-categoryid="1"] .ipsType_sectionTitle a {
+  font-size: 1.3em;
+  color: #4e9815;
+  text-decoration: underline !important;
+}
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"] [data-categoryid="1"] .ipsType_sectionTitle a.cForumToggle {
+  display:none;
+}
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"] [data-categoryid="1"] > ol {
+  display: none;
+}
+/* finish hiding Flash/ActionScript */
+
+/* ACP PAtches */
+
+body.ipsApp.ipsApp_admin {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ipsApp_admin h1.ipsType_pageTitle {
+    font: 400 32px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+}
+
+
+
+/* Strange Widget Tab Text Color Problem */
+
+.ipsWidget .ipsTabs_small .ipsTabs_item:not( .ipsTabs_activeItem ) {
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid transparent;
+}
+
+
+/* Button Patches */
+
+[type="submit"].ipsButton_primary {
+    background: #636363;
+    color: #ffffff;
+}
+
+
+
+/* Generic pad left 15 */
+
+.padLeft15 {
+    padding-left: 15px;
+}
+
+
+/* Commerce Invoice */
+
+#invoiceWrapper {
+    width: 100%;
+    height: 100%;
+  	min-height: 100vh;
+    background: white;
+	font-family: 'Signika Negative', Arial, sans-serif;
+  	font-size: 18px;
+  	font-weight: 300;
+}
+#invoiceWrapper strong {
+  	font-weight: 600;
+}
+
+.invoice_topheader {
+    background: #262626;
+    width: 100%;
+    border-bottom: 5px solid #89ce03;
+    color: #fff;
+    -webkit-print-color-adjust: exact;
+}
+.invoice_topheader strong {
+ 	font-size: 15px;
+}
+
+.invoice_page {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.invoice_green {
+    color: #88cb00;
+    font-size: 20px;
+}
+
+#invoice_content {
+    background: white;
+    padding: 15px 15px 45px 15px;
+    min-height: 700px;
+}
+
+#invoice_address {
+    font-size: 16px;
+}
+
+#invoice_contentHeader {
+    display:inline-block;
+    width:100%;
+}
+
+#invoice_contentHeader div.ipsPos_right {
+    font-size: 16px;
+    top: 10px;
+    position: relative;
+}
+
+#invoice_content h1 {
+    font-size: 42px;
+  font-weight: 600;
+    color: #262626;
+    text-transform: uppercase;
+  margin: 10px 0;
+    float: left;
+}
+
+
+.invoice_ipsPrint {
+    -webkit-print-color-adjust: exact;
+    width: 1000px;
+    margin: 0 auto;
+    background: white;
+    height: 100%;
+}
+
+#invoice_poStatus {
+    display:inline-block;
+    width:100%;
+    margin-bottom: -7px;
+}
+
+#invoice_content .table th {
+    border-right: 1px solid #262626;
+}
+
+#invoice_content td, #invoice_content table th, #invoice_poStatus table th {
+    font-size: 16px;
+}
+
+#invoice_content .table th, #invoice_content .table td{
+    padding: 10px 5px;
+    border: 1px solid #262626;
+    border-top: none;
+}
+
+
+
+/*.ipsPageHeader {
+  margin: 25px 0 10px 0;
+}*/
+
+
+
+a.ipsType_blendLinks:not( .ipsType_noUnderline ):hover, .ipsType_blendLinks:not( .ipsType_noUnderline ) a:not( .ipsType_noUnderline ):hover {
+    color: #429815;
+    text-decoration: underline;
+}
+
+
+
+
+#breadcrumbWrapper {
+    margin: auto 0;
+    background-color: white;
+	min-height: 50px;
+  margin-bottom: 15px;
+}
+
+#ipsLayout_header header {
+    padding: 0px 0 0px 0;
+    margin-bottom: 0px;
+}
+
+#ipsLayout_contentArea {
+    display: table;
+    width: 1240px;
+    border-top: 0;
+    margin: auto;
+  	table-layout: fixed;
+  clear: both;
+}
+
+.ipsLayout_container {
+    max-width: none;
+    padding: 0 0px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#elUserNav {
+  font-size: 12px;
+  font-weight: 400;
+  color: #848484;
+  position: relative;
+  float: right;
+}
+
+#elUserNav > li > a:not(.ipsButton),
+#elUserNav > li > a:not(.ipsButton):hover {
+  font-size: 12px;
+  font-weight: 400;
+  color: #848484;
+  text-decoration: none;
+}
+
+#ipsLayout_contentWrapper {
+    width: 100%;
+    background-color: #ededed;
+}
+
+[data-pagecontroller="topic"] .cPost_contentWrap.ipsPad {
+    padding: 15px 10px 15px 0px;
+}
+
+#ipsTabs_content_form {
+    padding:0px 10px;
+}
+
+[data-pagecontroller="topic"] .ipsPad.ipsAreaBackground_light {
+    padding: 0px;
+    background-color: inherit;
+    padding-bottom: 15px;
+}
+
+.ipsApp .ipsButton_normal {
+    background: #9e9e9e;
+    color: #ffffff;
+}
+
+.ipsUserPhoto_small img, img.ipsUserPhoto_small, .ipsUserPhoto_small:after {
+    border-radius: 2px;
+}
+
+
+/* BREADCRUMBS AND NAV */
+
+nav[data-controller="core.front.core.navBar"] {
+    float: right;
+}
+
+.ipsNavBar_primary {
+    position: relative;
+    z-index: 2000;
+    background: none;
+    color: black;
+    min-width: 460px;
+}
+
+.ipsNavBar_primary > ul > li > a {
+    background: rgba(245,245,245,0.04);
+    font-size: 14px;
+    color: #777;
+    padding: 8px 15px 0px;
+    border-radius: 1px 1px 0px 0px;
+}
+
+.ipsNavBar_primary > ul > li > a:hover {
+	color: #4e9815;
+    text-decoration: underline;
+}
+
+/* Adjusted for dev2 site */
+.ipsBreadcrumb.ipsBreadcrumb_top {
+    border-bottom: none;
+    margin: 0 auto;
+    padding: 9px 10px 0;
+    background: white;
+    max-width: 1240px;
+}
+
+.ipsBreadcrumb > ul {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ipsDataItem_meta.ipsType_richText {
+    font-size: 14px;
+    color: #999;
+  	margin-top: 4px;
+}
+
+html[dir="ltr"] .ipsNavBar_primary > ul > li, html[dir="ltr"] .ipsNavBar_secondary > li {
+    float: right;
+}
+
+
+
+/* WIDGETS */
+
+.ipsWidget {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.ipsWidget.ipsWidget_vertical .ipsWidget_title, .ipsWidget.ipsWidget_horizontal .ipsWidget_title {
+    padding: 10px;
+    margin: 0;
+    font-weight: 400;
+    position: relative;
+    color: #fff;
+    background: #777;
+    border-radius: 6px 6px 0px 0px;
+    font-family: "Signika Negative", sans-serif;
+    font-size: 18px;
+}
+
+.ipsWidget.ipsWidget_vertical .ipsWidget_inner, .ipsWidget.ipsWidget_horizontal .ipsWidget_inner {
+    color: #575757;
+    border-radius: 0 0 6px 6px;
+    background-color: white;
+}
+
+.ipsWidget_inner .ipsTabs_panel {
+    border-radius:0 0 6px 6px;
+}
+
+
+.ipsWidget_inner .ipsDataList .ipsDataItem:last-child {
+    border-bottom: rgba(255, 0, 0, 0);
+}
+
+.ipsWidget .ipsDataItem .ipsUserPhoto_tiny img, .ipsWidget .ipsDataItem img.ipsUserPhoto_tiny, .ipsWidget .ipsDataItem .ipsUserPhoto_tiny:after {
+    border-radius: 5px;
+}
+
+.ipsWidget.ipsWidget_horizontal.ipsBox {
+    background: white;
+}
+
+
+/* Index Page */
+
+
+/* Rounded boxes - may have to adjust other places - 2 things: */
+/* Box and then ol list makes rounding corners a thing... */
+/* Target specific to pages if needed */
+
+/* So corners of the lists things don't have white tips */
+.cForumRow.ipsBox:not( .ipsBox_transparent ):not( .ipsModerated ) {
+    background-color: #ededed;
+}
+
+ol.ipsDataList.ipsDataList_large.ipsDataList_zebra.ipsAreaBackground_reset {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2px 0px;
+}
+
+ol.ipsDataList.ipsDataList_large.ipsDataList_zebra.ipsAreaBackground_reset li:last-of-type {
+    border-bottom: 0px solid gray;
+    border-radius: 0 0 6px 6px;
+}
+
+
+/* Status Icons */
+html[dir="ltr"] .ipsDataList_large .ipsDataItem_icon {
+    padding-right: 0px;
+    min-width: 0px;
+}
+
+
+
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] .ipsType_sectionTitle {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 21px 15px 21px 5px;
+    margin-top: 0;
+    background: #ededed;
+    color: #ffffff;
+    border-radius: 2px 2px 0px 0px;
+}
+
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] .ipsType_sectionTitle a {
+    font: 300 30px "Signika Negative", arial, sans-serif;
+    color: #555;
+}
+
+
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] .ipsPageHeader {
+    display: none;
+}
+
+
+
+
+/* links specifically on index page */
+
+.cForumRow h4 a,
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] h2 a,
+[data-controller="forums.front.forum.forumList"] h4 a {
+    color: #555;
+    text-decoration: none;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] h4 a:hover, [data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] h2 a:hover {
+    color: #48994e;
+}
+
+
+.ipsDataItem_lastPoster li:nth-of-type(2) a {
+    color: #6b6b6b;
+}
+
+.ipsDataItem_lastPoster li:nth-of-type(2) a:hover {
+    color: #48994e;
+}
+
+
+/* Index auth avatar */
+
+[data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] .ipsDataItem_lastPoster.ipsDataItem_withPhoto img {
+    width: 54px;
+    height: 54px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 980px) {
+
+
+    html[dir="ltr"] [data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] .ipsDataItem_lastPoster.ipsDataItem_withPhoto li {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+
+    [data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] .ipsDataItem_lastPoster {
+        min-width: 260px;
+    }
+
+    .ipsDataItem_lastPoster li:first-child {
+        display: block;
+    }
+
+
+}
+@media screen and (max-width: 979px) {
+
+    [data-pageapp="forums"][data-pagelocation="front"][data-pagemodule="forums"][data-pagecontroller="index"] .ipsDataItem_lastPoster.ipsDataItem_withPhoto img {
+        width: 34px;
+        height: 34px;
+    }
+
+
+}
+
+
+/* Forum View - Subforums */
+
+h4.ipsDataItem_title.ipsType_large.ipsType_break {
+    font-size:24px;
+}
+
+
+
+
+div.ipsList_reset.cForumList.ipsBox.ipsSpacer_bottom > h2.ipsType_sectionTitle.ipsType_reset {
+    display:none;
+}
+
+.ipsUserPhoto_tiny img, img.ipsUserPhoto_tiny, .ipsUserPhoto_tiny:after {
+    border-radius: 2px;
+}
+
+div.ipsList_reset.cForumList.ipsBox.ipsSpacer_bottom[data-controller="forums.front.forum.forumList"] {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+}
+
+
+/* Tags, etc. */
+
+.ipsType_pageTitle .ipsBadge {
+    position: relative;
+    bottom: 2px;
+}
+
+
+
+
+
+
+/* Formatted sectionTitle but hidden as the post count is moved to tool list */
+[data-pagecontroller="topic"] .ipsType_sectionTitle {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    border: solid 1px #d0d0d0;
+    color: #aaa;
+    font-family: signika negative;
+    font-weight: lighter;
+    font-size: 15px;
+    display:none;
+}
+[data-pagecontroller="topic"] .ipsUserPhoto_large img {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.cPost.ipsBox {
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    margin: 0 0 28px 0;
+    padding: 0px 20px 0px 20px;
+}
+
+/*  Need display: block to force Firefox to respect min-height */
+.cPost.ipsComment .ipsType_richText {
+    margin-top: 0;
+    min-height: 150px;
+    display: block;
+}
+
+
+/* Slightly larger photo in topic header with slight border */
+[data-pagecontroller="topic"] .ipsPhotoPanel.ipsPhotoPanel_small.ipsPhotoPanel_notPhone.ipsClearfix img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d7d7d7;
+}
+
+
+
+[data-controller="forums.front.topic.reply"] a.ipsButton.ipsButton_important.ipsButton_medium.ipsButton_fullWidth {
+    background-image: linear-gradient(to top, #4e9816, #57a818);
+    border: 1px solid #41850e;
+    min-width: 125px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.ipsButton:not(.ipsButton_light):not(#elWidgetControls) {
+    background-image: linear-gradient(to top, #4e9816, #57a818);
+    border: 1px solid #41850e;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-weight: 400;
+  	transition: all 0s;
+
+  	text-transform: uppercase;
+}
+.ipsButton:not(.ipsButton_light):not(#elWidgetControls):not(.ipsButton_verySmall) {
+  min-width: 125px;
+}
+.ipsButton:not(.ipsButton_light):not(#elWidgetControls):not(.ipsButton_verySmall):not([data-ipsdialog-title="Compose New"]) {
+  font-size: 0.85em;
+}
+.ipsButton:not(.ipsButton_light):not(.ipsButton_verySmall):not(#elWidgetControls).fullWidth {
+  font-size: 1em;
+}
+
+.ipsButton.grayBtn:not(#elWidgetControls) {
+  background: #fff;
+  background-image: -webkit-linear-gradient(to bottom, #ffffff, #f0f0f0);
+  background-image: -moz-linear-gradient(to bottom, #ffffff, #f0f0f0);
+  background-image: -o-linear-gradient(to bottom, #ffffff, #f0f0f0);
+  background-image: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  text-shadow: 0px 1px 0px #ffffff;
+  box-shadow: 0px 1px 0px #fefefe;
+  color: #4f931b;
+  border: solid #cfcfcf 1px;
+  font-weight: 400;
+}
+.ipsButton.blackBtn:not(#elWidgetControls) {
+  color: #fff;
+  border: 0;
+  background: #414141;
+  background-image: -webkit-linear-gradient(top, #575757, #414141);
+  background-image: -moz-linear-gradient(top, #575757, #414141);
+  background-image: -ms-linear-gradient(top, #575757, #414141);
+  background-image: -o-linear-gradient(top, #575757, #414141);
+  background-image: linear-gradient(to bottom, #575757, #414141);
+}
+header .ipsButton.blackBtn:not(#elWidgetControls) {
+  text-transform: none;
+  font-weight: 400;
+}
+.ipsButton:not(.ipsButton_light):not(#elWidgetControls):not(.ipsButton_disabled):hover {
+  background: #69be27;
+  background-image: -webkit-linear-gradient(to bottom, #69be27, #5fb41c);
+  background-image: -moz-linear-gradient(to bottom, #69be27, #5fb41c);
+  background-image: -o-linear-gradient(to bottom, #69be27, #5fb41c);
+  background-image: linear-gradient(to bottom, #69be27, #5fb41c);
+}
+
+.ipsButton.grayBtn:not(#elWidgetControls):not(.ipsButton_disabled):hover,
+.ipsButton.blackBtn:not(#elWidgetControls):not(.ipsButton_disabled):hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: none;
+  background: #57a818;
+  background-image: -webkit-linear-gradient(top, #57a818, #4d9916);
+  background-image: -moz-linear-gradient(top, #57a818, #4d9916);
+  background-image: -o-linear-gradient(top, #57a818, #4d9916);
+  background-image: linear-gradient(to bottom, #57a818, #4d9916);
+}
+.ipsButton:not(.ipsButton_light):not(#elWidgetControls):hover a:not(.ipsCommentCount) {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+a.ipsButton.ipsButton_link.ipsButton_fullWidth {
+    min-width: 125px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    text-shadow: 0px 1px 0 #fff;
+    font-size: 14px;
+    font-family: "Signika Negative", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #FFFFFF, #F0F0F0) repeat scroll 0 0 #FFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px 4px 4px 4px;
+    color: #4e9815;
+}
+
+a.ipsButton.ipsButton_link.ipsButton_fullWidth:hover {
+    background: linear-gradient(to bottom, #59a91b, #4e9916) repeat scroll 0 0 #57A818;
+    color: #FFF;
+    text-shadow: 0 1px 0 #32610E;
+}
+
+
+
+.ipsApp .ipsButton_primary.ipsButton_small {
+    background: #585858;
+    color: #ffffff;
+}
+
+
+
+/* IPS PRIMARY BUTTON */
+
+.ipsButton.ipsButton_primary:not(.ipsButton.ipsButton_primary.ipsButton_narrow) {
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, #4e9816, #57a818);
+    border: 1px solid #41850e;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font: 600 13px/1.3 "Signika Negative", Arial, sans-serif;
+    text-align: center;
+    min-width: 125px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 4px;
+    display: inline-block;
+    transition: none !important;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    padding: 8px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.ipsButton.ipsButton_primary:not(.ipsButton.ipsButton_primary.ipsButton_narrow):hover {
+    background-image: linear-gradient(to top, #57a718, #69be27);
+    color: white;
+}
+
+
+
+h1.ipsType_pageTitle {
+    font: 300 35px/1.1 "Signika Negative",Arial,sans-serif;
+    color: #444;
+}
+
+aside.ipsComment_author.cAuthorPane.ipsColumn.ipsColumn_medium {
+    width:160px;
+}
+
+
+.gs_asideBadge {
+    z-index: 2000;
+    position: absolute;
+    right: 15px;
+    top: 115px;
+}
+
+
+.gs_asidePhoto {
+    margin-bottom: 10px;
+}
+
+.cAuthorPane_author {
+    font-size: 14px;
+    text-align:left;
+}
+
+h3.ipsType_sectionHead.cAuthorPane_author.ipsType_blendLinks.ipsType_break strong{
+    float:left;
+}
+ul.cAuthorPane_info.ipsList_reset {
+    text-align: left;
+    position: relative;
+}
+
+
+
+
+
+.cAuthorPane_info li.ipsType_light {
+    color: #b8b8b8;
+    font-family: 'Signika Negative',sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    float: left;
+}
+
+.cAuthorPane .cAuthorGroupIcon {
+    width: 40px;
+}
+
+
+/* Custom Profile Fields display in topic post view */
+
+ul.cAuthorPane_info.ipsList_reset li:nth-of-type(1) {
+    display: none;
+}
+
+ul.cAuthorPane_info.ipsList_reset li:nth-of-type(2) {
+    display: none;
+}
+
+ul.cAuthorPane_info.ipsList_reset li:nth-of-type(3) {
+    display: none;
+}
+
+ul.cAuthorPane_info.ipsList_reset a.ipsRepBadge i.fa {
+    display: none;
+}
+
+ul.cAuthorPane_info.ipsList_reset a.ipsRepBadge {
+    color: #777 !important;
+    display: block;
+    width: 180px;
+    float: left;
+}
+
+
+/* Like Button */
+
+
+.ipsLikeRep {
+    background: none;
+    padding: 0px;
+
+}
+
+
+.ipsLikeRep .ipsButton, .ipsReputation_count {
+    padding: 3px 8px;
+}
+
+a.ipsButton.ipsButton_like.ipsButton_veryLight {
+    background: #4e9815;
+    color: white;
+}
+
+html[dir="ltr"] .ipsLikeRep .ipsLike_contents + .ipsButton {
+    margin-left: 0px;
+}
+
+
+.ipsLikeRep .ipsButton:active {
+    border:0px;
+    background-image:none;
+}
+
+.ipsLike_contents {
+    font-size: 12px;
+    float: right;
+    padding-top: 5px;
+}
+
+.ipsButton.ipsButton_like.ipsButton_alternate {
+
+    margin-right: 0px;
+    display: inline-block;
+    transition: none !important;
+    background: linear-gradient(to bottom, #FFFFFF, #F0F0F0) repeat scroll 0 0 #FFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px 4px 4px 4px;
+    color: #4e9815;
+    cursor: pointer;
+    font-family: "Signika Negative", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 12px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFF;
+    text-transform: uppercase;
+
+}
+
+.ipsButton.ipsButton_like.ipsButton_alternate:hover {
+    background: linear-gradient(to bottom, #57A818, #4D9916) repeat scroll 0 0 #57A818;
+    color: #FFF;
+    text-shadow: 0 1px 0 #32610E;
+}
+
+
+
+
+html[dir="ltr"] .ipsLikeRep .ipsLike_contents + .ipsButton {
+    font-family: "Signika Negative", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 8px;
+}
+
+
+
+
+
+
+
+/* Post content padding fix */
+
+html[dir="ltr"] .cPost .ipsComment_content {
+    padding-right: 0;
+    padding-left: 0px;
+}
+
+
+
+
+
+/* Posts - commentControls - target better if need */
+
+ul.ipsComment_controls > li > a {
+    margin-right: 0px;
+    display: inline-block;
+    transition: none !important;
+    background: linear-gradient(to bottom, #FFFFFF, #F0F0F0) repeat scroll 0 0 #FFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px 4px 4px 4px;
+    color: #4e9815;
+    cursor: pointer;
+    font-family: "Signika Negative", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 12px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFF;
+    text-transform: uppercase;
+}
+
+ul.ipsComment_controls > li > a:hover {
+    background: linear-gradient(to bottom, #57A818, #4D9916) repeat scroll 0 0 #57A818;
+    color: #FFF;
+    text-shadow: 0 1px 0 #32610E;
+}
+
+
+span.ipsLike_contents a {
+    color: #4e9815 !important;
+}
+
+span.ipsLike_contents a:hover {
+    text-decoration: underline !important;
+    color: #4e9815 !important;
+}
+
+
+
+
+
+
+
+html[dir="ltr"] .ipsComment_controls > li {
+    margin-right: 2px;
+}
+
+
+.cPost .ipsComment_meta {
+    padding: 15px 10px 10px 0;
+}
+
+
+
+div[data-role="replyArea"].cTopicPostArea {
+    padding:0px;
+}
+
+/* Code box. Not sure how to swing the pretty print stuff as those are targeted at the grey background */
+
+.pln {
+    color: #000;
+    font-size: 12px;
+}
+
+
+.ipsCode {
+    background: #fafafa;
+    padding: 15px !important;
+    border: 0 !important;
+    border-left: 4px solid #5e9815 !important;
+    clear: both;
+    direction: ltr;
+    word-wrap: normal;
+}
+
+/* Tool list - currrently everywhere but can get locked to forums later */
+
+div[data-controller="forums.front.forum.forumPage"] > ul.ipsToolList.ipsToolList_horizontal.ipsClearfix.ipsSpacer_both {
+    margin-top: 0px;
+    margin-bottom: 15px !important;
+}
+
+
+div.ipsClearfix.aaGreensockToollist {
+    margin: 25px 0px 0px 0px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    border: solid 1px #d0d0d0;
+}
+
+/* Adjusted for Dev2 20 or 10*/
+div.ipsClearfix.aaGreensockToollist div.ipsPad_half.ipsPos_left.ipsType_light.ipsResponsive_hidePhone {
+    padding: 10px 7px 0px 8px;
+}
+
+[data-pagecontroller="topic"] div.ipsClearfix.aaGreensockToollist div.ipsPad_half.ipsPos_left.ipsType_light.ipsResponsive_hidePhone {
+    padding: 20px 7px 0px 8px;
+}
+
+
+div.ipsClearfix.aaGreensockToollist h2 {
+    color: #aaa;
+    font-family: signika negative;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 38px;
+}
+
+
+/* Checkout Page and Purchases - need to deal with responsive... */
+/* ipsLayout_minimal is on the body call changing things... */
+/* Just hide the top breadcrumb afterwards */
+
+[data-pagecontroller="checkout"]  nav.ipsBreadcrumb.ipsBreadcrumb_top.ipsFaded_withHover {
+    display: none;
+}
+
+/*make sure the max width here is larger than the standard page size - fixes most/everything */
+/* Actually, it needs to match the ips wrapper max css size whatever that is set to */
+/* EME: Changed this per Jack's request 4/20/2017 */
+.ipsLayout_minimal .ipsLayout_container {
+    min-width: 400px;
+    /*max-width: 1240px;*/
+    max-width: none;
+}
+
+
+/* Centers the important junk */
+section.ipsAreaBackground_light.ipsPad {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.cNexusCheckout_review section.ipsBox div.ipsPad {
+    min-height:180px;
+}
+
+[data-pagecontroller="checkout"] hr {
+    display:none;
+}
+
+[data-pagecontroller="purchases"] .cNexusPurchase .ipsNoThumb, .cNexusPurchase .cNexusPurchase_image {
+    margin: 0 auto;
+}
+
+.ipsStepBar > .ipsStep.ipsStep_active > span {
+    background-position: top right;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.7);
+}
+.ipsApp button.ipsButton_primary {
+ 	background-color: #4c9a0f;
+}
+
+
+
+
+
+/* Button Bar pagination  - note button bar is hard coded here, but is avail in settings*/
+
+.ipsButtonBar {
+    line-height: 1;
+}
+
+
+
+.ipsApp .ipsButtonBar .ipsPagination .ipsPagination_page a, .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_next a, .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_prev a, .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_first a, .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_last a {
+    background: rgb(255, 255, 255);
+    text-shadow: none;
+    color: #55a418;
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    padding: 0px 10px;
+}
+
+
+.ipsApp .ipsButtonBar .ipsPagination .ipsPagination_page a:hover, .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_next a:hover, .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_prev a:hover, .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_first a:hover, .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_last a:hover {
+    background: #54a317;
+    color: #ffffff;
+}
+
+
+
+
+.ipsButtonBar .ipsPagination .ipsPagination_page.ipsPagination_active a {
+    background: #54a317;
+    color: #ffffff;
+}
+
+.ipsButtonBar .ipsPagination .ipsPagination_pageJump a {
+    color: rgb(84, 163, 23);
+    font-size: 13px;
+}
+
+
+/* Forum View Topic list */
+
+
+
+
+
+.ipsBox[data-tableid="topics"] {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d8d8d8;
+    border-radius: 5px;
+}
+
+[data-tableid="topics"] .ipsButtonBar {
+    background: #f1f1f1;
+}
+
+
+[data-tableid="topics"] .ipsType_sectionTitle {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 11px 15px 11px 15px;
+    margin-top: 0;
+    background: #fafafa;
+    color: #999;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.ipsApp .ipsClaimedTag.ipsButton.ipsButton_light.ipsButton_verySmall.ipsButton_disabled {
+    padding: 0px 5px;
+    line-height: 22px;
+}
+
+.ipsDataItem_title {
+    font-size: 14px;
+    margin: 0 0 0px 0;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.ipsDataItem_meta.ipsType_reset.ipsType_light.ipsType_blendLinks {
+    font-size: 12px;
+}
+
+.ipsDataItem_lastPoster.ipsDataItem_withPhoto.ipsType_blendLinks .ipsUserPhoto.ipsUserPhoto_tiny img, .ipsDataItem_lastPoster.ipsDataItem_withPhoto.ipsType_blendLinks img.ipsUserPhoto_tiny, .ipsDataItem_lastPoster.ipsDataItem_withPhoto.ipsType_blendLinks .ipsUserPhoto_tiny:after {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+}
+
+[data-tableid="topics"] .ipsDataItem_stats {
+    padding-right: 30px;
+}
+
+html[dir="ltr"] .cTopicList .ipsDataItem_icon {
+    min-width: 34px;
+    padding: 12px 0px 12px 20px;
+}
+
+
+.cTopicList .ipsDataItem_icon {
+    vertical-align: middle !important;
+}
+
+h4.ipsDataItem_title.ipsContained_container a {
+    font-family: "Signika Negative",sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.cTopicList .ipsDataList.ipsDataList_zebra .ipsDataItem:not( .ipsDataItem_selected ):not( .ipsModerated ):not( .ipsDataItem_new ):not( .ipsDataItem_success ):not( .ipsDataItem_warning ):not( .ipsDataItem_error ):not( .ipsDataItem_info ):not( .ipsDataItem_status ):nth-child(even) {
+    background: #ffffff;
+}
+
+
+
+.ipsDataList.ipsDataList_zebra .ipsDataItem:not( .ipsDataItem_selected ):not( .ipsModerated ):not( .ipsDataItem_new ):not( .ipsDataItem_success ):not( .ipsDataItem_warning ):not( .ipsDataItem_error ):not( .ipsDataItem_info ):not( .ipsDataItem_status ):nth-child(even) {
+    background: #f8f8f8;
+}
+
+
+
+.ipsDataList.ipsDataList_zebra.ipsClear.cForumTopicTable.cTopicList {
+
+}
+
+
+.ipsDataList:not( .ipsGrid ) .ipsDataItem:last-child, .ipsDataList.ipsDataList_zebra > .ipsDataItem {
+   /* border-bottom: 1px solid #d7d7d7; */
+}
+
+
+.ipsButtonBar .ipsButtonRow li > a, .ipsButtonBar .ipsButtonRow li > button, .ipsButtonBar .ipsButtonRow li > span {
+    background: rgba(180, 180, 180, 0.3);
+    color: #444;
+    font-weight: bold;
+}
+
+.cTopicList .ipsDataItem_main {
+    padding: 16px;
+}
+
+
+/* New Favorite button thing */
+
+#elFavorite {
+    margin-right: 10px;
+}
+
+
+/* Status Circles, etc. */
+
+.ipsItemStatus:not( .ipsItemStatus_large ) {
+    color: #4e9916;
+}
+
+.ipsItemStatus.ipsItemStatus_large {
+    background: rgba(78, 153, 22, 0);
+    color: rgb(78, 153, 22);
+    font-size: 28px;
+}
+
+.ipsItemStatus.ipsItemStatus_large.ipsItemStatus_read {
+    background: none;
+
+}
+
+
+.ipsItemStatus.ipsItemStatus_large.cForumIcon_normal {
+    background: rgba(78, 152, 21, 0);
+}
+
+
+
+
+/* Footer */
+
+#ipsLayout_footer a, #ipsLayout_footer p {
+    color: #afafaf;
+}
+
+.ipsTags .ipsTag, .ipsTag_prefix {
+	color: #999;
+}
+
+.ipsTags .ipsTag, .ipsTag_prefix {
+	border-color: transparent #999 transparent transparent;
+}
+
+.ipsTag_prefix {
+  background: #bbb;
+  font-size: 12px !important;
+}
+.ipsTag_prefix::before {
+  border-color: transparent #bbb transparent transparent !important;
+}
+
+.ipsBadge.ipsBadge_icon.ipsBadge_small {
+  	position: relative;
+	top: -4px;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+[data-role="replyArea"] a.ipsButton_primary {
+	font-size: 14px;
+}
+
+[data-blocktitle="Combined Statistics"] {
+  background-color: transparent !important;
+  color: #777;
+  border: none;
+  padding: 0;
+}
+[data-blocktitle="Combined Statistics"] li {
+  color: #777;
+}
+[data-blocktitle="Combined Statistics"] .ipsPad {
+  padding: 0;
+}
+[data-blocktitle="Combined Statistics"] .ipsSpacer_top {
+  margin-top: 0;
+}
+[data-blocktitle="Combined Statistics"] .ipsBadge {
+  background-color: #aaa;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+/* checkout */
+i.ipsType_huge.fa.fa-shopping-cart {
+  display: none;
+}
+#elCheckoutContent p.ipsType_normal {
+  margin: 6px 0 18px 0;
+}
+#elCheckoutContent img.ipsImage.ipsThumb_small {
+  margin-right: 6px;
+}
+.ipsBox .cNexusCheckout_review .ipsDataList.ipsDataList_reducedSpacing .ipsDataItem_main, .ipsBox .cNexusCheckout_review .ipsDataList.ipsDataList_reducedSpacing .ipsDataItem_generic {
+  vertical-align: middle;
+}
+.paymentForm ul .ipsBox.ipsPad {
+  padding-bottom: 2px;
+}
+#elCheckoutContent .satisfaction {
+  margin: 42px 0;
+  display: table;
+  font-family: "Signika Negative", Arial, sans-serif;
+}
+#elCheckoutContent .satisfaction .dark-text {
+  color: #444;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+}
+#elCheckoutContent .satisfaction p {
+  color: #777;
+  margin-top: 0;
+}
+#elCheckoutContent .satisfaction img {
+  margin-right: 8px;
+}
+.final-words {
+  font-weight: 400;
+}
+@media screen and (max-width: 767px) {
+  .ipsApp .additional .ipsGrid > .ipsGrid_span3 {
+	width: 48.93617021276595%;
+  }
+  html[dir="ltr"] .additional .ipsGrid_span3:nth-child( 2n+1 ) {
+    margin-left: 0;
+  }
+}
+
+#elRadio_change_package_to_ .ipsFieldRow_desc {
+  font-size: 0.8em;
+}
+#elRadio_change_package_to_ label {
+  font-size: 1em;
+}
+
+.ipsBox .cNexusCheckout_review .cRenewManual, .ipsBox .cNexusCheckout_review .cRenewAuto {
+  text-align: left;
+}
+.cNexusCheckout_subtotal {
+	border-top: 1px solid #ddd;
+}
+.cNexusCheckout_review .ipsDataItem_main .ipsType_medium {
+  font-size: 16px;
+}
+.ipsStepBar .ipsStep {
+  font-size: 15px;
+  line-height: 1.1em;
+}
+.cRenewManual, .cRenewAuto {
+  font-size: 14px;
+  line-height: 20px;
+}
+.cRenewManual strong {
+  background-color: #ffd381;
+  padding: 1px 5px;
+  color: #444;
+}
+
+.cNexusCheckout_review h2.ipsType_sectionTitle {
+ color: #FFF;
+  font-size: 18px;
+}
+
+
+.ipsApp label:not( .ipsField_unlimited ), .ipsApp input, .ipsApp button, .ipsApp select, .ipsApp textarea {
+ font-weight: normal;
+}
+
+#elTopicClaimContainer a.ipsUserPhoto img {
+  width: 30px;
+  height: 30px;
+}
+
+[data-tableid="topics"] h4 .ipsClaimedTag a {
+  font-size: 14px;
+}
+
+li.ipsClaimedTopic {
+ 	background-color: #ffeebe !important;
+}
+
+a[data-mentionid]:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 979px) {
+  [data-tableid="topics"] .ipsDataItem_stats, [data-tableid="topics"] .ipsDataItem_lastPoster a time[data-short], .aaGreensockToollist {
+    display: none;
+  }
+  [data-tableid="topics"] .ipsDataItem {
+    padding: 0;
+  }
+  .ipsComment .ipsComment_controls {
+    display: none;
+  }
+  .cPost.ipsComment .ipsType_richText {
+    min-height: 20px;
+  }
+  .ipsPageHeader {
+  	margin: 10px 0;
+  }
+  .ipsPageHeader .ipsPos_right.ipsResponsive_noFloat {
+    float: right !important;
+  }
+}
+
+
+[data-role="messageList"] .cMessageTitle {
+  font-size: 16px;
+}
+#elMessageSidebar [data-role="messageList"] .cMessageTitle.cMessageTitle_unread {
+  font-weight: 600;
+}
+
+#breadcrumbWrapper {
+  padding-bottom: 5px;
+}
+.ipsBreadcrumb > ul > li {
+  height: auto;
+  white-space: normal;
+}
+.ipsBreadcrumb > ul > li > a:hover {
+  color: #59a91b;
+  text-decoration: underline;
+}
+/*
+html[dir="ltr"] .ipsLike_contents {
+  margin-top: 11px;
+}
+*/
+
+.cNexusOrderBadge.cNexusOrderBadge_pend {
+	background: #ea943e;
+}
+
+[data-pagecontroller="invoices"] .cNexusOrderList .ipsDataItem_title {
+  font-size: 20px;
+  font-family: "Signika Negative", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 6px;
+}
+html[dir="ltr"] [data-pagecontroller="invoices"] .ipsDataList_large .ipsDataItem_icon {
+  padding-right: 6px;
+}
+
+.ipsDataList_large .ipsDataItem {
+ border-color: #ccc;
+}
+[data-pagecontroller="invoices"] .cNexusOrderList .ipsDataItem_generic {
+  line-height: 28px;
+}
+.cNexusPurchaseList .cNexusPurchaseList_image, .cNexusPurchase .cNexusPurchase_image {
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+}
+
+[data-pagecontroller="lostpass"] .ipsLayout_contentSection {
+  font-size: 18px;
+  font-family: "Signika Negative", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  color: #777;
+}
+
+li[data-blocktitle="Recently Browsing"] {
+  border: none;
+  background-color: transparent !important;
+}
+
+li[data-blocktitle="Recently Browsing"] > h3 {
+  background-color: transparent !important;
+  color: #777 !important;
+  border-bottom: 1px solid #ccc;
+  padding: 22px 0 3px 0 !important;
+}
+li[data-blocktitle="Recently Browsing"] > .ipsWidget_inner {
+  background-color: transparent !important;
+  border-top: 1px solid white;
+  padding: 3px 0 !important;
+}
+.head-nav input:focus, .head-nav input {
+    outline: none !important;
+  	border: none !important;
+  	-webkit-box-shadow: none !important;
+  	box-shadow: none !important;
+}
+
+
+
+/* LOGIN */
+
+.ipsApp .ipsFieldRow_fullWidth button,
+.ipsApp .ipsForm_fullWidth .ipsFieldRow button {
+	width: auto;
+}
+
+.ipsButton.ipsButton_small.ipsButton_fullWidth.ipsButton_link {
+  display: inline-block;
+  width: auto;
+}
+
+[data-pagecontroller="login"] .cLogin {
+  max-width: 700px;
+}
+
+
+#form_change_package_to > label {
+  font-size: 21px;
+  line-height: 28px;
+}
+
+/* to ensure the top right block of text is aligned the same as on non-forums pages */
+.header-container.block-container {
+  font-size: 12px;
+  line-height: 17px;
+}
+.head-nav .main {
+  line-height: 24px;
+}
+
+/* This file was created because the previous one got too large for IPS */
+
+/* Added by Zach from greensockpages.css */
+.cInnerContent {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ipsGrid {
+  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Make splitPhone work */
+@media (max-width: 767px) {
+  .ipsApp .ipsGrid_splitPhone > .ipsGrid_span4 {
+    width: 48.93617021276595%;
+  }
+  html[dir="ltr"] .ipsGrid_splitPhone .ipsGrid_span4:nth-child( odd ) {
+    margin-left: 0;
+  }
+  html[dir="ltr"] .ipsGrid_splitPhone .ipsGrid_span4:nth-child( even ) {
+    margin-left: 2.127659574468085%;
+  }
+}
+
+[class*="ipsGrid_span"] {
+  margin-bottom: 20px;
+}
+
+.ipsApp .ipsSpacer_top_double {
+  margin-top: 30px;
+}
+.ipsApp .ipsSpacer_bottom_double {
+  margin-bottom: 30px;
+}
+.ipsApp .ipsSpacer_both_double {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.ipsApp .noSpacerTop {
+  margin-top: 0;
+}
+
+.ipsApp .ipsPad_top_double {
+  padding-top: 30px;
+}
+.ipsApp .ipsPad_bottom_double {
+  padding-bottom: 30px;
+}
+
+.cPageHeader {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #cccccc;
+  padding: 35px 15px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.31em;
+  color: #333;
+  line-height: 1.38;
+}
+
+h2.sectionTitle {
+  font-size: 1.475em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+iframe,
+img {
+  max-width: 100%;
+}
+.ipsUserPhoto {
+  background: transparent;
+}
+.ipsUserPhoto img {
+  max-width: none;
+}
+#cUserLink .ipsUserPhoto {
+  margin-top: 0;
+}
+
+.flexContainer {
+  display: inline-block;
+  display: -ms-flex;
+  display: flex;
+}
+
+@media (max-width: 550px) {
+  .flexNotPhones,
+  .flexNotPhones > * {
+	display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .flexNotTablets,
+  .flexNotTablets > * {
+	display: block;
+  }
+}
+
+.flexColumn {
+  flex-direction: column
+}
+
+.flexSpaceAround {
+  justify-content: space-around;
+}
+
+.flexCentered {
+  justify-content: center;
+}
+
+.flexAlignCentered {
+  align-items: center;
+}
+
+.flexWrapped {
+  flex-wrap: wrap;
+}
+
+.flexGrow1 {
+  flex-grow: 1;
+}
+
+.inlineAlignMiddle {
+  vertical-align: middle;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 1px 1px 5px 1px #CCCCCC;
+}
+
+.darkCard {
+  -webkit-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.35);
+  -moz-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.35);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.35);
+  background: #515151;
+  background: -moz-linear-gradient(90deg, #515151 0%, #414141 100%);
+  background: -webkit-linear-gradient(90deg, #515151 0%, #414141 100%);
+  background: -o-linear-gradient(90deg, #515151 0%, #414141 100%);
+  background: -ms-linear-gradient(90deg, #515151 0%, #414141 100%);
+  background: linear-gradient(180deg, #515151 0%, #414141 100%);
+  color: #b0b0b0;
+  border: none;
+}
+
+.darkCard h2 {
+  color: #e0e0e0;
+}
+
+
+.cGrayContent {
+  background: #393939;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+.cDarkContent {
+  background: #262626;
+  color: #fff;
+  border-top: 1px solid #313131;
+}
+
+.cDarkContent h2 {
+  color: #eee;
+}
+
+.cWhiteContent {
+  background-color: #fff;
+  border-top: 1px solid #d5d5d5;
+}
+
+.cBlackContent {
+  background-color: #000;
+  color: #8f8f8f;
+}
+
+.cBlackContent a,
+.cDarkContent a {
+  color: #88ce02;
+  font-weight: 400;
+}
+
+.cOffGrayContent {
+  background: #ddd;
+}
+
+.cCmsCategoryFeaturedEntry .cBlackContent a {
+  font-size: 1em;
+  font-weight: 400;
+  color: #888;
+}
+
+.iframe-container {
+  margin-bottom: 15px;
+}
+
+.ipsPager_type {
+  font-size: initial;
+}
+
+.ipsReact_button {
+  filter: grayscale(100%);
+}
+
+.ipsType_success, .ipsType_positive {
+  color: #86cc03;
+}
+
+.ipsType_warning, .ipsType_negative {
+  color: #db494a;
+}
+
+.ipsType_uppercase {
+  text-transform: uppercase;
+}
+
+.cBlogRow_image {
+  margin-right: 15px;
+}
+
+.learning-widget .cBlogRow_image img {
+  height: 100px;
+}
+.ipsWidget_inner .cGrayContent {
+  transition: background 0.3s;
+}
+.ipsWidget_inner .cGrayContent:hover {
+  background: #494949;
+}
+
+.ipsSpacer_right {
+  margin-right: 15px;
+}
+.ipsSpacer_left {
+  margin-left: 15px;
+}
+
+.ipsTabs.ipsTabs.ipsTabs_stretch [role="tablist"] {
+  border-top: none;
+}
+
+@media screen and (max-width: 767px) {
+  .ipsWidget_inner .noSpacerTop {
+    padding-left: 0;
+  }
+}
+
+#viewMoreElem {
+  overflow: hidden;
+}
+
+#viewMoreElem > *:nth-child(n + 4) {
+  display: none;
+}
+
+@media(max-width: 767px) {
+  #viewMoreElem > *:nth-child(n + 3) {
+    display: none;
+  }
+  .ipsWidget_inner .cBlogRow_image img {
+    height: 100px;
+  }
+}
+
+.demo, /* Used in blog posts */
+.relative {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #262626;
+  background: -moz-linear-gradient(to top, #262626 12px, transparent 120px, transparent 100%);
+  background: -webkit-linear-gradient(to top, #262626 12px, transparent 120px, transparent 100%);
+  background: linear-gradient(to top, #262626 12px, transparent 120px, transparent 100%);
+}
+
+.full {
+  display: block;
+  height: 100%;
+}
+
+.full:hover {
+  text-decoration: none;
+}
+.full:hover .read-more {
+  text-decoration: underline;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 7px;
+  right: 15px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.video-heading {
+  background-color: black;
+  line-height: 0;
+}
+
+.pageBanner {
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+a > code,
+li > code,
+p > code {
+  text-shadow: none;
+  color: #333;
+  padding: 2px 4px;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+#elLoginHeaderPopup#elLoginHeaderPopup {
+  font-size: 1.2em;
+}
+
+.cp_embed_wrapper,
+.stackblitz-container {
+  margin-bottom: 15px;
+}
+
+.demoHeader iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.demoHeader .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.headerVideo {
+  max-width: 1000px;
+}
+
+.cLogin_single {
+  max-width: 450px;
+}
+
+.emoji {
+  max-width: 1em;
+}
+
+.notification-banner {
+  padding: 12px 16px;
+  background-color: #fdebde;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px 1px #CCCCCC;
+  border: solid 1px #cecece;
+  margin-left: 0;
+  margin-right: 0;
+}
+.main-content .notification-banner p {
+  margin-bottom: 0;
+}
+
+[data-baseurl="https://greensock.com/online/"] { /* Online users page */
+  font-size: 13px;
+}
+
+#elInspirationalSidebar {
+  background: black;
+  color: #dbdbdb;
+  border-radius: 10px;
+}
+#elInspirationalSidebar a {
+  color: #6fb936;
+}
+#elInspirationalSidebar cite {
+  text-align: right;
+  color: #6b6b6b;
+  display: block;
+  font-style: normal;
+  font-size: 0.9em;
+}
